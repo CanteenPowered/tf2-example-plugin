@@ -21,8 +21,9 @@ This is an example client/server plugin for Team Fortress 2 on Windows or Linux.
 5. Set up the runtime: `./steam-runtime/setup.sh` (select defaults)
 
 ### Building
-1. Run `cmake -DCMAKE_BUILD_TYPE=Release -G Ninja -B build`
-2. Run `ninja -C build`
+1. Activate the Steam Client Runtime: `/valve/steam-runtime/shell-i386.sh`
+2. Run `cmake -DCMAKE_BUILD_TYPE=Release -G Ninja -B build`
+3. Run `ninja -C build`
 
 
 ## License
