@@ -41,8 +41,7 @@ public:
     // Called when a client changes replicated cvar
     virtual void            ClientSettingsChanged(edict_t*) { }
     // Called when a client tries to connect
-    virtual PLUGIN_RESULT   ClientConnect(bool*, edict_t*, const char*,
-                                          const char*, char*, int)
+    virtual PLUGIN_RESULT   ClientConnect(bool*, edict_t*, const char*, const char*, char*, int)
     {
         return PLUGIN_CONTINUE;
     }
@@ -57,10 +56,9 @@ public:
         return PLUGIN_CONTINUE;
     }
     // Called on client cvar query finished
-    virtual void            OnQueryCvarValueFinished(QueryCvarCookie_t,
-                                                     edict_t*,
-                                                     EQueryCvarValueStatus,
-                                                     const char*, const char*)
+    virtual void            OnQueryCvarValueFinished(QueryCvarCookie_t, edict_t*,
+                                                     EQueryCvarValueStatus, const char*,
+                                                     const char*)
     {
     }
     // Called on edict allocated
