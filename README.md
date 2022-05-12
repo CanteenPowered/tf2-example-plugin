@@ -2,6 +2,9 @@
 
 This is an example client/server plugin for Team Fortress 2 on Windows or Linux.
 
+## Building - Windows (Command-Line w/ Visual Studio)
+1. Run `build.cmd`
+
 ## Building - Windows (Visual Studio 2019 or later)
 1. Open the project repository in Visual Studio
 2. Press build
