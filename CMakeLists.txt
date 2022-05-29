@@ -12,4 +12,4 @@ add_subdirectory(source-sdk-tf2)
 add_library(plugin SHARED
     "${CMAKE_CURRENT_LIST_DIR}/plugin.cpp"
 )
-target_link_libraries(plugin PRIVATE mathlib tier0 tier1)
+target_link_libraries(plugin PRIVATE mathlib tier0 tier1 vstdlib)
