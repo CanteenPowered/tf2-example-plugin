@@ -2,13 +2,12 @@
 
 This is an example client/server plugin for Team Fortress 2 on Windows or Linux.
 
-## Building - Windows (Command-Line w/ Visual Studio)
-1. Install [Visual Studio](https://visualstudio.microsoft.com/downloads/) and [CMake](https://cmake.org/)
-1. Run `build.cmd`
-
 ## Building - Windows (Visual Studio 2019 or later)
 1. Open the project repository in Visual Studio
 2. Press build
+
+or if you don't plan on editing code with Visual Studio:
+1. Run `build.cmd`
 
 ## Building - Windows (Older Visual Studio)
 1. Generate your project files with CMake
