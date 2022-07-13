@@ -41,26 +41,13 @@ public:
     // Called when a client changes replicated cvar
     virtual void            ClientSettingsChanged(edict_t*) { }
     // Called when a client tries to connect
-    virtual PLUGIN_RESULT   ClientConnect(bool*, edict_t*, const char*, const char*, char*, int)
-    {
-        return PLUGIN_CONTINUE;
-    }
+    virtual PLUGIN_RESULT   ClientConnect(bool*, edict_t*, const char*, const char*, char*, int) { return PLUGIN_CONTINUE; }
     // Called when a client runs a command
-    virtual PLUGIN_RESULT   ClientCommand(edict_t*, const CCommand&)
-    {
-        return PLUGIN_CONTINUE;
-    }
+    virtual PLUGIN_RESULT   ClientCommand(edict_t*, const CCommand&) { return PLUGIN_CONTINUE; }
     // Called when a client receives a network ID
-    virtual PLUGIN_RESULT   NetworkIDValidated(const char*, const char*)
-    {
-        return PLUGIN_CONTINUE;
-    }
+    virtual PLUGIN_RESULT   NetworkIDValidated(const char*, const char*) { return PLUGIN_CONTINUE; }
     // Called on client cvar query finished
-    virtual void            OnQueryCvarValueFinished(QueryCvarCookie_t, edict_t*,
-                                                     EQueryCvarValueStatus, const char*,
-                                                     const char*)
-    {
-    }
+    virtual void            OnQueryCvarValueFinished(QueryCvarCookie_t, edict_t*, EQueryCvarValueStatus, const char*, const char*) { }
     // Called on edict allocated
     virtual void            OnEdictAllocated(edict_t*) { }
     // Called on edict freed
@@ -69,10 +56,7 @@ public:
 
 // Expose plugin as interface
 CExamplePlugin g_Plugin;
-EXPOSE_SINGLE_INTERFACE_GLOBALVAR(CExamplePlugin, IServerPluginCallbacks,
-                                  INTERFACEVERSION_ISERVERPLUGINCALLBACKS,
-                                  g_Plugin);
-
+EXPOSE_SINGLE_INTERFACE_GLOBALVAR(CExamplePlugin, IServerPluginCallbacks, INTERFACEVERSION_ISERVERPLUGINCALLBACKS, g_Plugin);
 
 // Example ConCommand
 CON_COMMAND(example_command, "Example ConCommand")
