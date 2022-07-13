@@ -13,7 +13,7 @@ where /Q cl.exe || (
 )
 
 if not exist %~dp0\build\build.ninja (
-    cmake -G Ninja -B %~dp0\build
+    cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -B %~dp0\build
 )
 
 ninja -C %~dp0\build
